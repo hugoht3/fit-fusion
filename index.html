@@ -22,24 +22,39 @@
     <!-- place where the calculation will be done -->
 
     <div class="question-area">
+        <div class="questions">
+            <span id="height"></span>
+            <input type="number" id="answer-box1" placeholder="height">
+            <span id="operator">x</span>
+            <span id="wheight"></span>
+            <input type="number" id="answer-box2" placeholder="wheight">
+            <span id="age">x</span>
+            <input type="number" id="answer-box3" placeholder="age">
+            <span id="days">x</span>
+            <input type="number" id="answer-box4" placeholder="days exercised">
+        </div>
 
-        <span id="operand1"></span>
-        <input type="number" id="answer-box" placeholder="height">
-        <span id="operator">x</span>
-        <span id="operand2"></span>
-        <input type="number" id="answer-box" placeholder="wheight">
-        <span id="operand3">x</span>
-        <input type="number" id="answer-box" placeholder="age">
-        <span id="operand1">x</span>
-        <input type="number" id="answer-box" placeholder="days exercised">
+
+
+
     </div>
-
-    <!-- area of result for the calculation -->
+    <!-- Button to execute the log() function wich makes the calculation -->
     <div>
-        <p class="result">Result</p>
+        <button data-type="calculate" onclick="log()" class="result">Calculate</button>
     </div>
+    
+    <!-- box in which the result of the inputs of user will shown -->
+    
+    <div>
+
+        <p class="response">result:<span>0</span></p>
+        
+    </div>
+
     <footer>
-        <p>Message after goal has been reached
+        <p>
+
+            Message after goal has been reached
 
         </p>
 
