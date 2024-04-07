@@ -16,22 +16,27 @@
     <div>
         <h1 id="name"><i class="fa-solid fa-dumbbell"></i>Fit-Fusion<i class="fa-solid fa-dumbbell"></i></h1>
         <p id="area"><i class="fa-solid fa-dumbbell"></i>Area of calculation</p>
+        <p id="area">How many calories you spent a day.</p>
 
     </div>
 
     <!-- place where the calculation will be done -->
 
     <div class="question-area">
+        
+        <select name="Select you`re sex" id="sex">
+            <option id="male" value="male">Male</option>
+            <option id="female" value="female">Female</option>
+        </select>
+        
         <div class="questions">
             <span id="height"></span>
             <input type="number" id="answer-box1" placeholder="height">
             <span id="operator">x</span>
-            <span id="wheight"></span>
+            <span id="weight"></span>
             <input type="number" id="answer-box2" placeholder="wheight">
             <span id="age">x</span>
             <input type="number" id="answer-box3" placeholder="age">
-            <span id="days">x</span>
-            <input type="number" id="answer-box4" placeholder="days exercised">
         </div>
 
 
@@ -39,8 +44,8 @@
 
     </div>
     <!-- Button to execute the log() function wich makes the calculation -->
-    <div>
-        <button data-type="calculate" onclick="log()" class="result">Calculate</button>
+    <div>                                 
+        <button data-type="calculate" onclick="calculateBmr()" class="result">Calculate</button>
     </div>
     
     <!-- box in which the result of the inputs of user will shown -->
