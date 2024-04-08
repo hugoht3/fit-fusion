@@ -1,15 +1,8 @@
-// //function log () {
-//     let userInput = document.getElementById("answer-box1").value;
-//     let userInput2 = document.getElementById("answer-box2").value;
-//     let userInput3 = document.getElementById("answer-box3").value;
-//     alert(console.log(userInput.innerText * userInput2.innerText * userInput3.innerText));
-// }
-
 // this will make the calculation based on age height and wheith of a person
 // becouse i`m desconsidering a number of days worked out i`m using a moderate activity level multiplier which is a (x1.55)
 
 
-
+let calories;
 
 // THIS IS THE MATH RESULT FOR A MALE
 function calculateBmrMale() {
@@ -18,8 +11,14 @@ function calculateBmrMale() {
     let age = parseInt(document.getElementById("answer-box3").value);
 
     let result = (88.8362) + (13.397 * weight) + (4.799 * height) - (5.677 * age);
-    result.parseInt;
-    console.log(result, "Male");
+
+    // math.floor(result);
+    result = parseInt(result);
+    console.log(1);
+    goalMessage(result);
+    console.log(2);
+    document.getElementById("response").innerText = result;
+
 };
 
 
@@ -31,8 +30,11 @@ function calculateBmrFemale() {
     let age = parseInt(document.getElementById("answer-box3").value);
 
     let result = (447.593) + (9.247 * weight) + (3.098 * height) - (4.330 * age);
-    result.parseInt;
-    console.log(result, "Female");
+    result = parseInt(result);
+    calories = result;
+    console.log(result);
+    document.getElementById("response").innerText = result;
+
 };
 
 
@@ -44,7 +46,14 @@ function calculateBmr() {
         calculateBmrMale();
     } else if (sexSelected === "female") {
         calculateBmrFemale();
-    } 
+    }
 
 };
+
+
+function goalMessage (result) {
+    console.log("funcionou o valor das calorias sao: ",result);
+    let horasDeCaminhada = result/10;
+    console.log(result ,' este valor e equivalente a ', horasDeCaminhada, ' horas de caminhada.')
+}
 document.getElementById("sex").addEventListener("change", calculateBmr);
