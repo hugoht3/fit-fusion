@@ -2,7 +2,7 @@
 // becouse i`m desconsidering a number of days worked out i`m using a moderate activity level multiplier which is a (x1.55)
 
 
-let calories;
+
 
 // THIS IS THE MATH RESULT FOR A MALE
 function calculateBmrMale() {
@@ -14,11 +14,11 @@ function calculateBmrMale() {
 
     // math.floor(result);
     result = parseInt(result);
-    console.log(1);
-    goalMessage(result);
-    console.log(2);
-    document.getElementById("response").innerText = result;
 
+    // have it log for functionality porpuse.
+    console.log(result);
+    document.getElementById("response").innerText = result;
+    goalMessage(result);
 };
 
 
@@ -31,10 +31,11 @@ function calculateBmrFemale() {
 
     let result = (447.593) + (9.247 * weight) + (3.098 * height) - (4.330 * age);
     result = parseInt(result);
-    calories = result;
+
+    // have it log for functionality porpuse.
     console.log(result);
     document.getElementById("response").innerText = result;
-
+    goalMessage(result);
 };
 
 
@@ -50,10 +51,23 @@ function calculateBmr() {
 
 };
 
+function goalMessage(result) {
 
-function goalMessage (result) {
-    console.log("funcionou o valor das calorias sao: ",result);
-    let horasDeCaminhada = result/10;
-    console.log(result ,' este valor e equivalente a ', horasDeCaminhada, ' horas de caminhada.')
-}
-document.getElementById("sex").addEventListener("change", calculateBmr);
+    let message;
+
+    let messageWalking = `X hours of ${result / 5} played Walking`;
+
+    let messageWorkout = `X hours of ${result / 10} played Working Out`;
+
+    if(result<500){
+        message = messageWalking
+    }else{
+        message = messageWorkout;
+    }
+
+
+    // console.log("funcionou o valor das calorias sao: ",result);
+    // let horasDeCaminhada = result/10;
+    // console.log(result ,' este valor e equivalente a ', horasDeCaminhada, ' horas de caminhada.')
+    document.getElementById("goal-message").innerText = message;
+};

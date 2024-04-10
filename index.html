@@ -23,20 +23,21 @@
     <!-- place where the calculation will be done -->
 
     <div class="question-area">
-        
+
         <select name="Select you`re sex" id="sex">
             <option id="male" value="male">Male</option>
             <option id="female" value="female">Female</option>
         </select>
-        
+
         <div class="questions">
-            <span id="height"></span>
-            <input type="number" id="answer-box1" placeholder="height" required>
-            <span id="operator">x</span>
-            <span id="weight"></span>
-            <input type="number" id="answer-box2" placeholder="wheight" required>
-            <span id="age">x</span>
-            <input type="number" id="answer-box3" placeholder="age" required>
+
+            <span id="height">height:</span>
+            <input type="number" id="answer-box1" placeholder="cm" required>
+            <span id="operator"></span>
+            <span id="weight">weight:</span>
+            <input type="number" id="answer-box2" placeholder="kg" required>
+            <span id="age">age: </span>
+            <input type="number" id="answer-box3" placeholder="yers" required>
         </div>
 
 
@@ -44,20 +45,20 @@
 
     </div>
     <!-- Button to execute the log() function wich makes the calculation -->
-    <div>                                 
+    <div>
         <button data-type="calculate" onclick="calculateBmr()" class="result">Calculate</button>
     </div>
-    
+
     <!-- box in which the result of the inputs of user will shown -->
-    
+
     <div>
 
         <p>result:<span id="response">0</span></p>
-        
+
     </div>
 
     <footer>
-        <p>
+        <p id="goal-message">
 
             Message after goal has been reached
 
