@@ -59,15 +59,17 @@ function goalMessage(result) {
 
     let messageWorkout = `X hours of ${result / 10} played Working Out`;
 
-    if(result<500){
-        message = messageWalking
-    }else{
+    if (result < 500) {
+        message = messageWalking;
+        document.getElementById("goal-message").innerText = message;
+    } else {
         message = messageWorkout;
-    }
+        document.getElementById("goal-message").innerText = message;
+    };
 
 
     // console.log("funcionou o valor das calorias sao: ",result);
     // let horasDeCaminhada = result/10;
     // console.log(result ,' este valor e equivalente a ', horasDeCaminhada, ' horas de caminhada.')
-    document.getElementById("goal-message").innerText = message;
+   
 };
