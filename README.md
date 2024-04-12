@@ -17,6 +17,30 @@ This is the FIT-FUSION website for the project of (JAVA SCRIPT ESSENTIAL) CODE I
 
 ## Features 
 
-One page containing a header white the name followed by a paragraph message explaining the purpose of the site, right after whe are greeted by a simple select button that varies the calculation based on the sex selected by the user 
+
+One page containing a header with the name followed by a paragraph message explaining the purpose of the site,
+
 
 !!!!! (IMAGE HERE FINISH CSS FIRST)
+
+ right after we are greeted by a simple select button that varies the calculation based on the sex selected by the user 
+
+!!!!! (IMAGE HERE FINISH CSS FIRST)
+
+ Soon after we have 3 inputs regarding height weight and age respectively 
+
+ !!!!! (IMAGE HERE FINISH CSS FIRST)
+
+now a result button that executes the operation 
+
+!!!!! (IMAGE HERE FINISH CSS FIRST)
+
+Response : (value) 
+
+!!!!! (IMAGE HERE FINISH CSS FIRST)
+
+Ending in a message that will represent the calories you spent in different types of activities Eg. (Running, Basketball, Volleyball, Football)
+
+!!!!! (IMAGE HERE FINISH CSS FIRST)
+
+
