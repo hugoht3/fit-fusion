@@ -17,7 +17,7 @@ function calculateBmrMale() {
 
     // have it log for functionality porpuse.
     console.log(result);
-    document.getElementById("response").innerText = result;
+    document.getElementById("response").innerText = result + ":calories burned dayli";
     goalMessage(result);
 };
 
@@ -34,7 +34,7 @@ function calculateBmrFemale() {
 
     // have it log for functionality porpuse.
     console.log(result);
-    document.getElementById("response").innerText = result;
+    document.getElementById("response").innerText = result + ":calories burned dayli";
     goalMessage(result);
 };
 
@@ -52,24 +52,18 @@ function calculateBmr() {
 };
 
 function goalMessage(result) {
+    // result of calories devided by number of calories that you burn by the hour of set specific exercise in this case Running ;
+    let hoursOfRunning = result / 600;
+    let hoursOfBasketball = result / 700;
+    let hoursOfVolleyball = result / 400;
+    let hoursOfFootball = result / 700;
+    let hoursOfCycling = result / 600;
 
-    let message;
-
-    let messageWalking = `X hours of ${result / 5} played Walking`;
-
-    let messageWorkout = `X hours of ${result / 10} played Working Out`;
-
-    if (result < 500) {
-        message = messageWalking;
-        document.getElementById("goal-message").innerText = message;
-    } else {
-        message = messageWorkout;
-        document.getElementById("goal-message").innerText = message;
-    };
+    let message = (`${result + ":Calories"} is equal hours of ${(hoursOfRunning).toFixed(2)} of Running,
+     \n${result + ":Calories"} is equal hours of ${(hoursOfBasketball).toFixed(2)} of Basketball
+     \n${result + ":Calories"} is equal hours of ${(hoursOfVolleyball).toFixed(2)} of hoursOfVolleyball 
+     \n${result + ":Calories"} is equal hours of ${(hoursOfFootball).toFixed(2)} of hoursOfFootball`);
+    document.getElementById("goal-message").innerText = message;
 
 
-    // console.log("funcionou o valor das calorias sao: ",result);
-    // let horasDeCaminhada = result/10;
-    // console.log(result ,' este valor e equivalente a ', horasDeCaminhada, ' horas de caminhada.')
-   
 };
