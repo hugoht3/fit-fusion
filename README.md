@@ -43,4 +43,5 @@ Ending in a message that will represent the calories you spent in different type
 
 !!!!! (IMAGE HERE FINISH CSS FIRST)
 
-
+# Main Goal of the Website
+> To Those who have a curiosity on how many calories they spent in a day. know exactaly how much it is.

@@ -1,11 +1,14 @@
-
-   
 * {
     margin-top: 20px;
     text-align: center;
     color: #000000;
     font-size: 14px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
 }
+
 
 /* area whith the "users input */
 .questions {
@@ -28,6 +31,7 @@
     display: block;
     margin-top: 10px;
 }
+
 #sex {
     align-items: center;
 }
@@ -40,7 +44,7 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    
+
 }
 
 .result:hover {
@@ -73,5 +77,5 @@ footer {
     margin-top: 20px;
     text-align: center;
     color: #999;
-    font-size: 622px;
+    font-size: 62px;
 }

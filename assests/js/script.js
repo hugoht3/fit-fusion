@@ -38,7 +38,7 @@ function calculateBmrFemale() {
     goalMessage(result);
 };
 
-
+// FUNCTION THAT    CHANGE WHICH OF THE TWO OPERATION WILL BE EXECUTED 
 function calculateBmr() {
     let sex = document.getElementById("sex");
     let sexSelected = sex.options[sex.selectedIndex].value;
@@ -48,9 +48,9 @@ function calculateBmr() {
     } else if (sexSelected === "female") {
         calculateBmrFemale();
     }
-
+   requiredInput();
 };
-
+// MESAGE OF RESULT CALORIES 
 function goalMessage(result) {
     // result of calories devided by number of calories that you burn by the hour of set specific exercise in this case Running ;
     let hoursOfRunning = result / 600;
@@ -66,4 +66,28 @@ function goalMessage(result) {
     document.getElementById("goal-message").innerText = message;
 
 
+};
+
+
+// NEW FUNCTION THAT MAKES THE INPUTS HAVE REQUIREMENTS
+
+function requiredInput() {
+    var height = document.getElementById("answer-box1").value
+    var weight = document.getAnimations("answer-box2").value
+    var age = document.getElementById("answer-box3").value
+
+
+
+    if (height < 100) {
+        alert("consider height in centimeters.! ")
+        return false;
+    } else if (weight < 100) {
+        alert("consider weight in Kilos.! ")
+        return false;
+    } else if (age < 15) {
+        alert("age can't be less then 15 different calculation.!")
+        return false;
+    } else {
+        return true;
+    }
 };
