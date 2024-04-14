@@ -17,7 +17,7 @@ function calculateBmrMale() {
 
     // have it log for functionality porpuse.
     console.log(result);
-    document.getElementById("response").innerText = result + ":calories burned dayli";
+    document.getElementById("response").innerText = (`${result}  \nCalories you burn just by existing`);
     goalMessage(result);
 };
 
@@ -34,7 +34,7 @@ function calculateBmrFemale() {
 
     // have it log for functionality porpuse.
     console.log(result);
-    document.getElementById("response").innerText = result + ":calories burned dayli";
+    document.getElementById("response").innerText = (`${result}  \nCalories you burn just by existing`);
     goalMessage(result);
 };
 
@@ -59,10 +59,11 @@ function goalMessage(result) {
     let hoursOfFootball = result / 700;
     let hoursOfCycling = result / 600;
 
-    let message = (`${result + ":Calories"} is equal hours of ${(hoursOfRunning).toFixed(2)} of Running,
-     \n${result + ":Calories"} is equal hours of ${(hoursOfBasketball).toFixed(2)} of Basketball
-     \n${result + ":Calories"} is equal hours of ${(hoursOfVolleyball).toFixed(2)} of hoursOfVolleyball 
-     \n${result + ":Calories"} is equal hours of ${(hoursOfFootball).toFixed(2)} of hoursOfFootball`);
+    let message = (`${result + ":Calories"} is equal to ${Math.floor(hoursOfRunning).toFixed(2)} hours of Running
+     \n${result + ": Calories"} is equal to ${Math.floor(hoursOfBasketball).toFixed(2)} of Basketball Played
+     \n${result + ": Calories"} is equal to ${Math.floor(hoursOfVolleyball).toFixed(2)} of Volleyball Played
+     \n${result + ": Calories"} is equal to ${Math.floor(hoursOfFootball).toFixed(2)} of Football Played
+     \n${result + ": Caloreis"} is equal to ${Math.floor(hoursOfCycling).toFixed(2)} of Cycling`);
     document.getElementById("goal-message").innerText = message;
 
 

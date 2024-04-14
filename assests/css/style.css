@@ -10,6 +10,58 @@
 }
 
 
+/* Tittle and icons */
+#name {
+    color: #333;
+    font-size: 35px;
+}
+
+#area {
+    color: #666;
+    font-size: 16px;
+}
+
+#name>i {
+    color: #333;
+    font-size: 35px;
+
+}
+
+/*  Selection box from male/female */
+
+.question-area {
+    display: block;
+    margin-top: 10px;
+}
+
+#sex {
+    align-items: center;
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    border: 1px solid #ccc; 
+    outline: none;
+
+}
+
+/* Lables of the inputs  */
+
+#height,#weight,#age {
+    color: #333;
+    font-size: 18px;
+
+}
+#answer-box1,#answer-box2,#answer-box3 {
+    
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    border: 1px solid #ccc; 
+    outline: none; 
+
+
+    color: #5e437e;
+    padding: 20px;
+}
+
 /* area whith the "users input */
 .questions {
     display: block;
@@ -19,6 +71,7 @@
     border: none;
     cursor: pointer;
     align-items: center;
+    
 }
 
 #button,
@@ -27,14 +80,8 @@
     width: fit-content;
 }
 
-.question-area {
-    display: block;
-    margin-top: 10px;
-}
 
-#sex {
-    align-items: center;
-}
+/* RESULT BUTTON THAT EXECTUTES THE FUNCTIONS INS JS */
 
 .result {
     display: block;
@@ -44,6 +91,10 @@
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    border: 1px solid #ccc; 
+    outline: none;
 
 }
 
@@ -52,30 +103,25 @@
 }
 
 
-#area {
-    color: #666;
-    font-size: 16px;
-}
-
-#name {
-    color: #333;
-    font-size: 24px;
-}
-
-
 #response {
     margin-top: 20px;
     font-weight: bold;
-    display: flex;
+    font-size: 22px;
+    color: #5e437e;
+    letter-spacing: 1.5px;
 }
-
 
 
 /* FOOTER STYLE*/
 footer {
-
+    border: 5px solid rgb(161, 159, 161);
+    box-shadow: 5px 5px rgb(36, 35, 35);
     margin-top: 20px;
     text-align: center;
     color: #999;
     font-size: 62px;
+    border-radius: 10px; 
+    padding: 8px 12px; 
+    border: 1px solid #ccc; 
+    outline: none;
 }
