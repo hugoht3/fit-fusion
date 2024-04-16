@@ -56,6 +56,9 @@ Ending in a message to after two buttons appear and the interaction whith the us
 # Main Goal of the Website
 > To Those who have a curiosity on how many calories they spent in a day. know exactaly how much it is. And a little hint regarding a increase or decrease in their weight
 
+# Testing 
+
+This JavaScript code facilitates the calculation of Basal Metabolic Rate (BMR) for individuals based on their age, height, weight, and gender. Two separate functions, calculateBmrMale() and calculateBmrFemale(), compute the BMR using specific formulas tailored to each gender. The BMR represents the number of calories the body burns at rest. Additionally, the goalMessage() function provides insights into how many hours of various physical activities, such as running, basketball, volleyball, football, and cycling, would be needed to burn the calculated calories. Furthermore, the loseWeight() and gainWeight() functions offer personalized tips for either losing or gaining weight based on the calculated BMR and the selected gender. Users are required to input their height, weight, and age, and the code ensures these inputs meet certain criteria before performing the calculations. This code serves as a valuable tool for individuals seeking to manage their weight effectively and make informed decisions about their diet and exercise regimen.
 
 
 # Validator Test
@@ -88,8 +91,7 @@ Both Mobile and Desktop lighthouse status from DevTools
 
 # The deployment 
 
-For deployment we start by going to our repository in the github website. https://github.com/hugoht3/victor-project
-
+For deployment we start by going to our repository in the github website. https://hugoht3.github.io/fit-fusion/
 As we enter the repository e select the option Settings 
 
 ![Alt text ](/assests/images/gitsettings.png)
@@ -103,15 +105,14 @@ As we enter pages
 ![Alt text ](/assests/images/gitdeploy.png)
 
 We select the Option Deploy from branch 
-Select the branch you are working from, in this case mine is MASTER and file /root  hit Save
+Select the branch you are working from
 
 > after a few seconds or minutes depending on the amount of content, your website ill be show ant the top of the page and you can acess trought the link on the top
 
 
 
-The whole of the code was done in VSCODE and pushed to Git Hub, its pubic directory https://github.com/hugoht3/victor-project in the master branch. (go check it out :D).
+The whole of the code was done in VSCODE and pushed to Git Hub, its pubic directory https://hugoht3.github.io/fit-fusion/
 
-The live link can be found here - https://hugoht3.github.io/victor-project/index.html
 
 
 
@@ -120,10 +121,7 @@ The live link can be found here - https://hugoht3.github.io/victor-project/index
 
 The code institutes itself, the most of the information used comes from it.(https://codeinstitute.net/ie)
 
-
 > Instructions on how to improve the CSS was taken from https://www.youtube.com/@KevinPowell (Kevin Powell)
-
-> The icons in the footer were taken from Font Awesome.
 
 > The website font is from GOOGLE FONTS.
 
