@@ -13,7 +13,9 @@ https://hugoht3.github.io/fit-fusion/
 
 
 This is the FIT-FUSION website for the project of (JAVA SCRIPT ESSENTIAL) CODE INSTITUTE 17/04/2024.
-> The site is a BMR calculator (Basal metabolic rate) which is the amount of calories you spent.   !!!!! (IMAGE HERE FINISH CSS FIRST)
+> The site is a BMR calculator (Basal metabolic rate) which is the amount of calories you spent. 
+
+![alt text](/assests/images/site.png)
 
 
 ## Features 
