@@ -1,5 +1,5 @@
 # FIT - FUSION 
-![Alt text ](/assests/images/Logo.png)
+![Alt text ](/assests/images/logo.png)
 
 
 https://hugoht3.github.io/fit-fusion/
