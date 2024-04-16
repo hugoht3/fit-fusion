@@ -1,7 +1,8 @@
 # FIT - FUSION 
-
 ![Alt text ](/assests/images/Logo.png)
-(https://hugoht3.github.io/fit-fusion/)
+
+
+https://hugoht3.github.io/fit-fusion/
 
 > [!IMPORTANT]
 > The equation used on this particular website is based on a stimation. This means that some things are not considered such as the impact of exercise, diets, etc...
@@ -40,9 +41,15 @@ A Span element that ill show the result of the BMR calculation
 ![Alt text](/assests/images/span.png)
 
 Ending in a message to after two buttons appear and the interaction whith the user continues 
-> first the message ill appear independet of the users choosing of goal for a little curious informational of how many calories 
 
-!!!!! (IMAGE HERE FINISH CSS FIRST)
+![Alt text](/assests/images/message.png)
+
+> first the message ill appear independet of the users choosing of goal for a little curious informational of how many calories a relative to a number of exercises.
+> to them after depending on the users chosing of output be either that been gain of weight or lost the message ill change adequately.
+
+![Alt text](/assests/images/lose.png)
+![Alt text](/assests/images/gain.png)
+
 
 # Main Goal of the Website
 > To Those who have a curiosity on how many calories they spent in a day. know exactaly how much it is.
