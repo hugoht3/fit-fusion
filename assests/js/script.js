@@ -12,7 +12,7 @@ function calculateBmrMale() {
      result = (88.8362) + (13.397 * weight) + (4.799 * height) - (5.677 * age);
 
     result = Math.floor(result);
-    document.getElementById("response").innerText = (`${result}  \nCalories your Body burns daily`);
+    document.getElementById("response").innerText = (`${result}  \nCalories your body burns daily`);
     goalMessage(result);
     return result;
 };
@@ -25,7 +25,7 @@ function calculateBmrFemale() {
     let result = (447.593) + (9.247 * weight) + (3.098 * height) - (4.330 * age);
     result = Math.floor(result);
 
-    document.getElementById("response").innerText = (`${result}  \nCalories your Body burns daily`);
+    document.getElementById("response").innerText = (`${result}  \nCalories your body burns daily`);
     goalMessage(result);
     return result;
 };
