@@ -1,7 +1,7 @@
 # FIT - FUSION 
 
-!!!!! (IMAGE HERE FINISH CSS FIRST)
-### put here the page link 
+![Alt text ](/assests/images/Logo.png)
+(https://hugoht3.github.io/fit-fusion/)
 
 > [!IMPORTANT]
 > The equation used on this particular website is based on a stimation. This means that some things are not considered such as the impact of exercise, diets, etc...
@@ -20,26 +20,27 @@ This is the FIT-FUSION website for the project of (JAVA SCRIPT ESSENTIAL) CODE I
 
 One page containing a header with the name followed by a paragraph message explaining the purpose of the site,
 
+![Alt text ](/assests/images/paragraph.png)
 
-!!!!! (IMAGE HERE FINISH CSS FIRST)
 
- right after we are greeted by a simple select button that varies the calculation based on the sex selected by the user 
+right after we are greeted by a simple select button that varies the calculation based on the sex selected by the user 
 
-!!!!! (IMAGE HERE FINISH CSS FIRST)
+![Alt text ](/assests/images/select.png)
 
- Soon after we have 3 inputs regarding height weight and age respectively 
+Soon after we have 3 inputs regarding height weight and age respectively 
 
- !!!!! (IMAGE HERE FINISH CSS FIRST)
+![Alt text](/assests/images/inputs'.png)
 
-now a result button that executes the operation 
+Now a result button that executes the operation 
 
-!!!!! (IMAGE HERE FINISH CSS FIRST)
+![Alt text](/assests/images/result.png)
 
-Response : (value) 
+A Span element that ill show the result of the BMR calculation
 
-!!!!! (IMAGE HERE FINISH CSS FIRST)
+![Alt text](/assests/images/span.png)
 
-Ending in a message that will represent the calories you spent in different types of activities Eg. (Running, Basketball, Volleyball, Football)
+Ending in a message to after two buttons appear and the interaction whith the user continues 
+> first the message ill appear independet of the users choosing of goal for a little curious informational of how many calories 
 
 !!!!! (IMAGE HERE FINISH CSS FIRST)
 
