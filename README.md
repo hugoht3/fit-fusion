@@ -58,8 +58,13 @@ Ending in a message to after two buttons appear and the interaction whith the us
 
 # Testing 
 
-This JavaScript code facilitates the calculation of Basal Metabolic Rate (BMR) for individuals based on their age, height, weight, and gender. Two separate functions, calculateBmrMale() and calculateBmrFemale(), compute the BMR using specific formulas tailored to each gender. The BMR represents the number of calories the body burns at rest. Additionally, the goalMessage() function provides insights into how many hours of various physical activities, such as running, basketball, volleyball, football, and cycling, would be needed to burn the calculated calories. Furthermore, the loseWeight() and gainWeight() functions offer personalized tips for either losing or gaining weight based on the calculated BMR and the selected gender. Users are required to input their height, weight, and age, and the code ensures these inputs meet certain criteria before performing the calculations. This code serves as a valuable tool for individuals seeking to manage their weight effectively and make informed decisions about their diet and exercise regimen.
-
+This JavaScript code facilitates the calculation of Basal Metabolic Rate (BMR) for individuals based on their age, height, weight, and gender.
+> The first function to be called is calculateBmr() that serve as a selector for two diferent calculations.
+> Two separate functions, calculateBmrMale() and calculateBmrFemale(), compute the BMR using specific formulas tailored to each gender.
+> The BMR represents the number of calories the body burns at rest.
+ Additionally, the goalMessage() function provides insights into how many hours of various physical activities, such as running, basketball, volleyball, football, and cycling, would be needed to burn the calculated calories.
+ Furthermore, the loseWeight() and gainWeight() functions offer personalized tips for either losing or gaining weight based on the calculated BMR and the selected gender.
+> Users are required to input their height, weight, and age, and the code ensures these inputs meet certain criteria before performing the calculations.
 
 # Validator Test
 
