@@ -15,70 +15,48 @@
 
 
     <link rel="stylesheet" href="./assests/css/style.css">
-        <title>fit-fusion</title>
-    </head>
+    <title>fit-fusion</title>
+</head>
 
-<body>
-
-    <div>
-        <h1 id="name"><i class="fa-solid fa-dumbbell"></i>Fit-Fusion<i class="fa-solid fa-dumbbell"></i></h1>
-        <p id="area">CALCULATE HERE HOW MANY CALORIES I WILL CONSUME IN A DAY. </p>
-
-    </div>
-
-    <!-- place where the calculation will be done -->
-
-    <div class="question-area">
-
-        <select name="Select you`re sex" id="sex">
-            <option id="male" value="male">Male</option>
-            <option id="female" value="female">Female</option>
-        </select>
-
-
-    </div>
-
-    <div class="questions">
-
-        <span id="height">HEIGHT</span>
-        <input type="number" id="answer-box1" placeholder="cm" required min="1">.
-        <span id="operator"></span>
-        <span id="weight">WEIGHT</span>
-        <input type="number" id="answer-box2" placeholder="Kg" required>
-        <span id="age">AGE</span>
-        <input type="number" id="answer-box3" placeholder="Year's old" required>
-    </div>
-
-    <!-- Button to execute the log() function which makes the calculation -->
-    <div id="button">
-        <button data-type="calculate" onclick="calculateBmr()" class="result">Result</button>
-    </div>
-
-    <!-- box in which the result of the inputs of user will shown -->
+<body class="p-3">
 
     <div>
-
-        <span id="response"></span>
-
+        <h1 id="name" class="text-center"><i class="fas fa-dumbbell"></i> Fit-Fusion <i class="fas fa-dumbbell"></i>
+        </h1>
+        <p id="area" class="text-center">CALCULATE HERE HOW MANY CALORIES I WILL CONSUME IN A DAY.</p>
     </div>
 
-    <div id="goal">
-        <p class="hidden" id="chosen" style=" border: 5px solid rgb(161, 159, 161);
-        box-shadow: 5px 5px rgb(36, 35, 35);
-        margin-top: 20px;
-        text-align: center;
-        color: #999;
-        border-radius: 10px; 
-        padding: 8px 12px; 
-        border: 1px solid #ccc; 
-        outline: none;">
+    <div class="container">
+        <div class="form-group">
+            <label for="sex">Select your sex:</label>
+            <select class="form-control" id="sex" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <small id="sex-error" class="error-message">Please select your sex.</small>
+        </div>
 
-            CHOSE A GOAL
+        <div class="form-group">
+            <label for="answer-box1">Height (cm):</label>
+            <input type="number" id="answer-box1" class="form-control" placeholder="Enter your height" required min="1">
+            <small id="height-error" class="error-message">Please enter a valid height.</small>
+        </div>
 
-        </p>
-        <button id="lose" class="hidden" value="lose" onclick="loseWeight ()">Lose Weight</button>
-        <button id="gain" class="hidden" value="gain" onclick="gainWeight ()">Gain Weight</button>
+        <div class="form-group">
+            <label for="answer-box2">Weight (Kg):</label>
+            <input type="number" id="answer-box2" class="form-control" placeholder="Enter your weight" required>
+            <small id="weight-error" class="error-message">Please enter a valid weight.</small>
+        </div>
 
+        <div class="form-group">
+            <label for="answer-box3">Age (Years):</label>
+            <input type="number" id="answer-box3" class="form-control" placeholder="Enter your age" required>
+            <small id="age-error" class="error-message">Please enter a valid age.</small>
+        </div>
+
+        <button data-type="calculate" onclick="calculateBmr()" class="btn btn-primary result">Calculate</button>
+        <p id="response" class="success-message"></p>
     </div>
 
 
