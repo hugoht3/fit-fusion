@@ -10,9 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    
+    <!-- Updated Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-whateverhashhere" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assests/css/style.css">
     <title>fit-fusion</title>
@@ -21,59 +21,49 @@
 <body class="p-3">
 
     <div>
-        <h1 id="name" class="text-center"><i class="fas fa-dumbbell"></i> Fit-Fusion <i class="fas fa-dumbbell"></i>
-        </h1>
+        <h1 id="name" class="text-center"><i class="fas fa-dumbbell"></i> Fit-Fusion <i class="fas fa-dumbbell"></i></h1>
         <p id="area" class="text-center">CALCULATE HERE HOW MANY CALORIES I WILL CONSUME IN A DAY.</p>
     </div>
 
     <div class="container">
-        <div class="form-group">
-            <label for="sex">Select your sex:</label>
-            <select class="form-control" id="sex" required>
+        <div class="mb-3"> <!-- Updated the class for bootstrap-->
+            <label for="sex" class="form-label">Select your sex:</label>
+            <select class="form-select" id="sex" required>
                 <option value="">Select</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
-            <small id="sex-error" class="error-message">Please select your sex.</small>
+            <div id="sex-error" class="form-text text-danger">Please select your sex.</div>
         </div>
 
-        <div class="form-group">
-            <label for="answer-box1">Height (cm):</label>
+        <div class="mb-3">
+            <label for="answer-box1" class="form-label">Height (cm):</label>
             <input type="number" id="answer-box1" class="form-control" placeholder="Enter your height" required min="1">
-            <small id="height-error" class="error-message">Please enter a valid height.</small>
+            <div id="height-error" class="form-text text-danger">Please enter a valid height.</div>
         </div>
 
-        <div class="form-group">
-            <label for="answer-box2">Weight (Kg):</label>
+        <div class="mb-3">
+            <label for="answer-box2" class="form-label">Weight (Kg):</label>
             <input type="number" id="answer-box2" class="form-control" placeholder="Enter your weight" required>
-            <small id="weight-error" class="error-message">Please enter a valid weight.</small>
+            <div id="weight-error" class="form-text text-danger">Please enter a valid weight.</div>
         </div>
 
-        <div class="form-group">
-            <label for="answer-box3">Age (Years):</label>
+        <div class="mb-3">
+            <label for="answer-box3" class="form-label">Age (Years):</label>
             <input type="number" id="answer-box3" class="form-control" placeholder="Enter your age" required>
-            <small id="age-error" class="error-message">Please enter a valid age.</small>
+            <div id="age-error" class="form-text text-danger">Please enter a valid age.</div>
         </div>
 
-        <button data-type="calculate" onclick="calculateBmr()" class="btn btn-primary result">Calculate</button>
+        <button data-type="calculate" onclick="calculateBmr()" class="btn btn-primary">Calculate</button>
         <p id="response" class="success-message"></p>
     </div>
 
-
     <footer>
-        <p id="goal-message">
-
-            Message after goal has been reached
-
-        </p>
-
-
-
-
+        <p id="goal-message">Message after goal has been reached</p>
     </footer>
 
-
-
+    <!-- Updated Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-whateverhashhere" crossorigin="anonymous"></script>
 
     <script src="./assests/js/script.js"></script>
     <script src="https://kit.fontawesome.com/e10185b9bd.js" crossorigin="anonymous"></script>
