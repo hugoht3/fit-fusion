@@ -4,9 +4,9 @@ const BMRCalculator = {
     maxAge: 100,    // Maximum age in years
 
     getValues: function() {
-        const height = parseInt(document.getElementById("answer-box1").value);
-        const weight = parseInt(document.getElementById("answer-box2").value);
-        const age = parseInt(document.getElementById("answer-box3").value);
+        const height = parseInt(document.getElementById("answer-box1").value, 10) || 0;
+        const weight = parseInt(document.getElementById("answer-box2").value, 10) || 0;
+        const age = parseInt(document.getElementById("answer-box3").value, 10) || 0;
 
         // Ensure values do not exceed maximum limits
         return {
@@ -24,8 +24,12 @@ const BMRCalculator = {
         return Math.floor(bmr);
     },
 
-    displayResult: function(result) {
-        document.getElementById("response").innerText = `${result} Calories your body burns daily`;
+    displayResult: function(result, gender) {
+        let message = `${result} Calories your body burns daily.`;
+        if (gender === 'male' || gender === 'female') {
+            message += ` Tips for Losing Weight: Calorie Deficit, Balanced Diet, Regular Exercise, Hydration.`;
+        }
+        document.getElementById("response").innerText = message;
     },
 
     showGoals: function() {
@@ -36,9 +40,8 @@ const BMRCalculator = {
 };
 
 function calculateBmr() {
-    if (!requiredInput()) return;
     const sex = document.getElementById("sex").value;
     const bmr = BMRCalculator.calculate(sex);
-    BMRCalculator.displayResult(bmr);
+    BMRCalculator.displayResult(bmr, sex);
     BMRCalculator.showGoals();
 }
