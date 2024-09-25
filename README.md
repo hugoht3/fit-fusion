@@ -1,4 +1,4 @@
-# FIT - FUSION 
+# FIT - FUSION (RESUBMISSION AT THE END)
 ![Alt text ](/assests/images/logo.png)
 
 
@@ -138,3 +138,41 @@ The code institutes itself, the most of the information used comes from it.(http
 > Git Extension Pack.
 
 > Live Server. Another very useful tool is to have your ideas (code) visualized on a webpage with a click of a button.
+
+
+
+
+# ***Fit-Fusion***  https://hugoht3.github.io/fit-fusion/ 
+
+- **Overview:** 
+
+**Fit-Fusion(BMR Calculator)** is a straightforward web application designed to help users calculate their Basal Metabolic Rate (BMR). By entering basic personal details like height, weight, age, and gender, users can quickly determine the number of calories their body needs at rest to maintain its current weight. The site also provides helpful weight management tips and insights to guide users on their fitness journey.
+
+
+
+# **Features**
+
+**BMR Calculation:** Input height, weight, age, and gender to calculate your BMR.
+**Weight Management Tips:** After calculating BMR, the site offers practical advice on maintaining a balanced diet, calorie deficit, and regular exercise.
+**Responsive Design:** The application is designed to work seamlessly across different devices, including desktops, tablets, and mobile phones.
+**Input Validation:** Ensures that users input valid values, preventing errors such as entering zero or negative numbers.
+
+# **Technologies Used**
+
+**HTML5 & CSS3:** For structuring and styling the web pages.
+**JavaScript:** For implementing the BMR calculation logic and enhancing interactivity.
+**Bootstrap 5:** For responsive layout and pre-built UI components.
+
+# BUGS 
+**Pathings** both files assets, and startbootstrap.... were left for a reason that in regarding of deployment features of the css and javascript were not been properly rendered and so as to leaving both files the problem was fixed
+
+# **Future Improvements**
+
+**Enhanced Interactivity:** Implement more interactive features, such as setting weight goals and tracking progress over time.
+**Expanded Input Validation:** Further improve input validation to handle a wider range of edge cases and provide more detailed error messages.
+**User Accounts:** Allow users to save their BMR calculations and track changes over time.
+
+# **Deployment**
+The website is deployed on [GitHub Pages]. You can access it by visiting [[insert URL here](https://hugoht3.github.io/fit-fusion/)].  
+# **Contributing**
+Contributions are welcome! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are gladly accepted.
